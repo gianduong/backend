@@ -48,14 +48,18 @@ namespace MISA.Fresher.Core.Service
         /// CreatedBy : NGDuong (24/5/2021)
         protected virtual void Validate(T entity)
         {
+            // Lấy ra các thuộc tính của đối tượng
             var properties = typeof(T).GetProperties();
+            // kiểm tra Attribute
             foreach (var property in properties)
             {
+                // Nếu có
                 var attributesRequired = property.GetCustomAttributes(typeof(Required), true);
                 if (attributesRequired.Length > 0)
                 {
                     var propertyValue = property.GetValue(entity);
                     var propertyType = property.PropertyType;
+                    // điều kiện giá trị không null
                     if (propertyType == typeof(string) && string.IsNullOrEmpty(propertyValue.ToString()))
                     {
                         var errorMessage = (attributesRequired[0] as Required)._msgError;
