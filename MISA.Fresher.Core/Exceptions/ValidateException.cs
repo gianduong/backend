@@ -6,6 +6,10 @@ using System.Threading.Tasks;
 
 namespace MISA.Fresher.Core.Exceptions
 {
+    /// <summary>
+    /// Xử lý ngoại lệ validate
+    /// </summary>
+    /// CreatedBy: NGDuong (17/07/2021)
     public class ValidateException : Exception
     {
 

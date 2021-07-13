@@ -12,3 +12,17 @@ E:\ngduong\WEB2021_05A-web05a-mf858-pqhieu\MISA.Fresher\MISA.Fresher.Core\obj\De
 E:\ngduong\WEB2021_05A-web05a-mf858-pqhieu\MISA.Fresher\MISA.Fresher.Core\obj\Debug\net5.0\MISA.Fresher.Core.dll
 E:\ngduong\WEB2021_05A-web05a-mf858-pqhieu\MISA.Fresher\MISA.Fresher.Core\obj\Debug\net5.0\ref\MISA.Fresher.Core.dll
 E:\ngduong\WEB2021_05A-web05a-mf858-pqhieu\MISA.Fresher\MISA.Fresher.Core\obj\Debug\net5.0\MISA.Fresher.Core.pdb
+E:\ngduong\backend\MISA.Fresher.Core\bin\Debug\net5.0\MISA.Fresher.Core.deps.json
+E:\ngduong\backend\MISA.Fresher.Core\bin\Debug\net5.0\MISA.Fresher.Core.dll
+E:\ngduong\backend\MISA.Fresher.Core\bin\Debug\net5.0\ref\MISA.Fresher.Core.dll
+E:\ngduong\backend\MISA.Fresher.Core\bin\Debug\net5.0\MISA.Fresher.Core.pdb
+E:\ngduong\backend\MISA.Fresher.Core\obj\Debug\net5.0\MISA.Fresher.Core.csprojAssemblyReference.cache
+E:\ngduong\backend\MISA.Fresher.Core\obj\Debug\net5.0\MISA.Fresher.Core.Properties.Resources.resources
+E:\ngduong\backend\MISA.Fresher.Core\obj\Debug\net5.0\MISA.Fresher.Core.csproj.GenerateResource.cache
+E:\ngduong\backend\MISA.Fresher.Core\obj\Debug\net5.0\MISA.Fresher.Core.GeneratedMSBuildEditorConfig.editorconfig
+E:\ngduong\backend\MISA.Fresher.Core\obj\Debug\net5.0\MISA.Fresher.Core.AssemblyInfoInputs.cache
+E:\ngduong\backend\MISA.Fresher.Core\obj\Debug\net5.0\MISA.Fresher.Core.AssemblyInfo.cs
+E:\ngduong\backend\MISA.Fresher.Core\obj\Debug\net5.0\MISA.Fresher.Core.csproj.CoreCompileInputs.cache
+E:\ngduong\backend\MISA.Fresher.Core\obj\Debug\net5.0\MISA.Fresher.Core.dll
+E:\ngduong\backend\MISA.Fresher.Core\obj\Debug\net5.0\ref\MISA.Fresher.Core.dll
+E:\ngduong\backend\MISA.Fresher.Core\obj\Debug\net5.0\MISA.Fresher.Core.pdb

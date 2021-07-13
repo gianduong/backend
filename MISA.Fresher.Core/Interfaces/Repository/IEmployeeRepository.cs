@@ -8,6 +8,10 @@ using System.Threading.Tasks;
 
 namespace MISA.Fresher.Core.Interfaces.Repository
 {
+    /// <summary>
+    /// Interface thực hiện thao tác với nhân viên
+    /// </summary>
+    /// CreatedBy: NGDuong (17/07/2021)
     public interface IEmployeeRepository:IBaseRepository<Employee>
     {
         /// <summary>

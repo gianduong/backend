@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "TauSVN262BF23MfX7vz1r9n3s6/cQ+4KvEbGTgkdLRt1bQve6JtUWPkxx6KVS9+cafAP1kNCk+Ge2fXwFX88ew==",
+  "dgSpecHash": "ayvZYcCqWq1QAzyutBuL9W/ulbamHdB7O7AidMwCv3qtzK6b0CDsOV6DFh3l4GYHpqnbiL5Nd+NecVvekrK6tw==",
   "success": true,
-  "projectFilePath": "E:\\ngduong\\WEB2021_05A-web05a-mf858-pqhieu\\MISA.Fresher\\MISA.Fresher.Infracstructure\\MISA.Fresher.Infracstructure.csproj",
+  "projectFilePath": "E:\\ngduong\\backend\\MISA.Fresher.Infracstructure\\MISA.Fresher.Infracstructure.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ngduong\\.nuget\\packages\\dapper\\2.0.90\\dapper.2.0.90.nupkg.sha512",
     "C:\\Users\\ngduong\\.nuget\\packages\\epplus\\5.6.4\\epplus.5.6.4.nupkg.sha512",

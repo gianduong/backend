@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\ngduong\\WEB2021_05A-web05a-mf858-pqhieu\\MISA.Fresher\\MISA.Fresher.Web\\MISA.Fresher.Web.csproj": {}
+    "E:\\ngduong\\backend\\MISA.Fresher.Web\\MISA.Fresher.Web.csproj": {}
   },
   "projects": {
-    "E:\\ngduong\\WEB2021_05A-web05a-mf858-pqhieu\\MISA.Fresher\\MISA.Fresher.Core\\MISA.Fresher.Core.csproj": {
+    "E:\\ngduong\\backend\\MISA.Fresher.Core\\MISA.Fresher.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\ngduong\\WEB2021_05A-web05a-mf858-pqhieu\\MISA.Fresher\\MISA.Fresher.Core\\MISA.Fresher.Core.csproj",
+        "projectUniqueName": "E:\\ngduong\\backend\\MISA.Fresher.Core\\MISA.Fresher.Core.csproj",
         "projectName": "MISA.Fresher.Core",
-        "projectPath": "E:\\ngduong\\WEB2021_05A-web05a-mf858-pqhieu\\MISA.Fresher\\MISA.Fresher.Core\\MISA.Fresher.Core.csproj",
+        "projectPath": "E:\\ngduong\\backend\\MISA.Fresher.Core\\MISA.Fresher.Core.csproj",
         "packagesPath": "C:\\Users\\ngduong\\.nuget\\packages\\",
-        "outputPath": "E:\\ngduong\\WEB2021_05A-web05a-mf858-pqhieu\\MISA.Fresher\\MISA.Fresher.Core\\obj\\",
+        "outputPath": "E:\\ngduong\\backend\\MISA.Fresher.Core\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ngduong\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -72,14 +72,14 @@
         }
       }
     },
-    "E:\\ngduong\\WEB2021_05A-web05a-mf858-pqhieu\\MISA.Fresher\\MISA.Fresher.Infracstructure\\MISA.Fresher.Infracstructure.csproj": {
+    "E:\\ngduong\\backend\\MISA.Fresher.Infracstructure\\MISA.Fresher.Infracstructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\ngduong\\WEB2021_05A-web05a-mf858-pqhieu\\MISA.Fresher\\MISA.Fresher.Infracstructure\\MISA.Fresher.Infracstructure.csproj",
+        "projectUniqueName": "E:\\ngduong\\backend\\MISA.Fresher.Infracstructure\\MISA.Fresher.Infracstructure.csproj",
         "projectName": "MISA.Fresher.Infracstructure",
-        "projectPath": "E:\\ngduong\\WEB2021_05A-web05a-mf858-pqhieu\\MISA.Fresher\\MISA.Fresher.Infracstructure\\MISA.Fresher.Infracstructure.csproj",
+        "projectPath": "E:\\ngduong\\backend\\MISA.Fresher.Infracstructure\\MISA.Fresher.Infracstructure.csproj",
         "packagesPath": "C:\\Users\\ngduong\\.nuget\\packages\\",
-        "outputPath": "E:\\ngduong\\WEB2021_05A-web05a-mf858-pqhieu\\MISA.Fresher\\MISA.Fresher.Infracstructure\\obj\\",
+        "outputPath": "E:\\ngduong\\backend\\MISA.Fresher.Infracstructure\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ngduong\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -96,8 +96,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "E:\\ngduong\\WEB2021_05A-web05a-mf858-pqhieu\\MISA.Fresher\\MISA.Fresher.Core\\MISA.Fresher.Core.csproj": {
-                "projectPath": "E:\\ngduong\\WEB2021_05A-web05a-mf858-pqhieu\\MISA.Fresher\\MISA.Fresher.Core\\MISA.Fresher.Core.csproj"
+              "E:\\ngduong\\backend\\MISA.Fresher.Core\\MISA.Fresher.Core.csproj": {
+                "projectPath": "E:\\ngduong\\backend\\MISA.Fresher.Core\\MISA.Fresher.Core.csproj"
               }
             }
           }
@@ -144,14 +144,14 @@
         }
       }
     },
-    "E:\\ngduong\\WEB2021_05A-web05a-mf858-pqhieu\\MISA.Fresher\\MISA.Fresher.Web\\MISA.Fresher.Web.csproj": {
+    "E:\\ngduong\\backend\\MISA.Fresher.Web\\MISA.Fresher.Web.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\ngduong\\WEB2021_05A-web05a-mf858-pqhieu\\MISA.Fresher\\MISA.Fresher.Web\\MISA.Fresher.Web.csproj",
+        "projectUniqueName": "E:\\ngduong\\backend\\MISA.Fresher.Web\\MISA.Fresher.Web.csproj",
         "projectName": "MISA.Fresher.Web",
-        "projectPath": "E:\\ngduong\\WEB2021_05A-web05a-mf858-pqhieu\\MISA.Fresher\\MISA.Fresher.Web\\MISA.Fresher.Web.csproj",
+        "projectPath": "E:\\ngduong\\backend\\MISA.Fresher.Web\\MISA.Fresher.Web.csproj",
         "packagesPath": "C:\\Users\\ngduong\\.nuget\\packages\\",
-        "outputPath": "E:\\ngduong\\WEB2021_05A-web05a-mf858-pqhieu\\MISA.Fresher\\MISA.Fresher.Web\\obj\\",
+        "outputPath": "E:\\ngduong\\backend\\MISA.Fresher.Web\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ngduong\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -168,11 +168,11 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "E:\\ngduong\\WEB2021_05A-web05a-mf858-pqhieu\\MISA.Fresher\\MISA.Fresher.Core\\MISA.Fresher.Core.csproj": {
-                "projectPath": "E:\\ngduong\\WEB2021_05A-web05a-mf858-pqhieu\\MISA.Fresher\\MISA.Fresher.Core\\MISA.Fresher.Core.csproj"
+              "E:\\ngduong\\backend\\MISA.Fresher.Core\\MISA.Fresher.Core.csproj": {
+                "projectPath": "E:\\ngduong\\backend\\MISA.Fresher.Core\\MISA.Fresher.Core.csproj"
               },
-              "E:\\ngduong\\WEB2021_05A-web05a-mf858-pqhieu\\MISA.Fresher\\MISA.Fresher.Infracstructure\\MISA.Fresher.Infracstructure.csproj": {
-                "projectPath": "E:\\ngduong\\WEB2021_05A-web05a-mf858-pqhieu\\MISA.Fresher\\MISA.Fresher.Infracstructure\\MISA.Fresher.Infracstructure.csproj"
+              "E:\\ngduong\\backend\\MISA.Fresher.Infracstructure\\MISA.Fresher.Infracstructure.csproj": {
+                "projectPath": "E:\\ngduong\\backend\\MISA.Fresher.Infracstructure\\MISA.Fresher.Infracstructure.csproj"
               }
             }
           }

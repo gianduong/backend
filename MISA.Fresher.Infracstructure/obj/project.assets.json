@@ -6335,11 +6335,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\ngduong\\WEB2021_05A-web05a-mf858-pqhieu\\MISA.Fresher\\MISA.Fresher.Infracstructure\\MISA.Fresher.Infracstructure.csproj",
+      "projectUniqueName": "E:\\ngduong\\backend\\MISA.Fresher.Infracstructure\\MISA.Fresher.Infracstructure.csproj",
       "projectName": "MISA.Fresher.Infracstructure",
-      "projectPath": "E:\\ngduong\\WEB2021_05A-web05a-mf858-pqhieu\\MISA.Fresher\\MISA.Fresher.Infracstructure\\MISA.Fresher.Infracstructure.csproj",
+      "projectPath": "E:\\ngduong\\backend\\MISA.Fresher.Infracstructure\\MISA.Fresher.Infracstructure.csproj",
       "packagesPath": "C:\\Users\\ngduong\\.nuget\\packages\\",
-      "outputPath": "E:\\ngduong\\WEB2021_05A-web05a-mf858-pqhieu\\MISA.Fresher\\MISA.Fresher.Infracstructure\\obj\\",
+      "outputPath": "E:\\ngduong\\backend\\MISA.Fresher.Infracstructure\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\ngduong\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -6356,8 +6356,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "E:\\ngduong\\WEB2021_05A-web05a-mf858-pqhieu\\MISA.Fresher\\MISA.Fresher.Core\\MISA.Fresher.Core.csproj": {
-              "projectPath": "E:\\ngduong\\WEB2021_05A-web05a-mf858-pqhieu\\MISA.Fresher\\MISA.Fresher.Core\\MISA.Fresher.Core.csproj"
+            "E:\\ngduong\\backend\\MISA.Fresher.Core\\MISA.Fresher.Core.csproj": {
+              "projectPath": "E:\\ngduong\\backend\\MISA.Fresher.Core\\MISA.Fresher.Core.csproj"
             }
           }
         }
