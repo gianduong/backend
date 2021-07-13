@@ -26,3 +26,17 @@ E:\ngduong\backend\MISA.Fresher.Core\obj\Debug\net5.0\MISA.Fresher.Core.csproj.C
 E:\ngduong\backend\MISA.Fresher.Core\obj\Debug\net5.0\MISA.Fresher.Core.dll
 E:\ngduong\backend\MISA.Fresher.Core\obj\Debug\net5.0\ref\MISA.Fresher.Core.dll
 E:\ngduong\backend\MISA.Fresher.Core\obj\Debug\net5.0\MISA.Fresher.Core.pdb
+E:\gitFile\backend\MISA.Fresher.Core\bin\Debug\net5.0\MISA.Fresher.Core.deps.json
+E:\gitFile\backend\MISA.Fresher.Core\bin\Debug\net5.0\MISA.Fresher.Core.dll
+E:\gitFile\backend\MISA.Fresher.Core\bin\Debug\net5.0\ref\MISA.Fresher.Core.dll
+E:\gitFile\backend\MISA.Fresher.Core\bin\Debug\net5.0\MISA.Fresher.Core.pdb
+E:\gitFile\backend\MISA.Fresher.Core\obj\Debug\net5.0\MISA.Fresher.Core.csprojAssemblyReference.cache
+E:\gitFile\backend\MISA.Fresher.Core\obj\Debug\net5.0\MISA.Fresher.Core.Properties.Resources.resources
+E:\gitFile\backend\MISA.Fresher.Core\obj\Debug\net5.0\MISA.Fresher.Core.csproj.GenerateResource.cache
+E:\gitFile\backend\MISA.Fresher.Core\obj\Debug\net5.0\MISA.Fresher.Core.GeneratedMSBuildEditorConfig.editorconfig
+E:\gitFile\backend\MISA.Fresher.Core\obj\Debug\net5.0\MISA.Fresher.Core.AssemblyInfoInputs.cache
+E:\gitFile\backend\MISA.Fresher.Core\obj\Debug\net5.0\MISA.Fresher.Core.AssemblyInfo.cs
+E:\gitFile\backend\MISA.Fresher.Core\obj\Debug\net5.0\MISA.Fresher.Core.csproj.CoreCompileInputs.cache
+E:\gitFile\backend\MISA.Fresher.Core\obj\Debug\net5.0\MISA.Fresher.Core.dll
+E:\gitFile\backend\MISA.Fresher.Core\obj\Debug\net5.0\ref\MISA.Fresher.Core.dll
+E:\gitFile\backend\MISA.Fresher.Core\obj\Debug\net5.0\MISA.Fresher.Core.pdb

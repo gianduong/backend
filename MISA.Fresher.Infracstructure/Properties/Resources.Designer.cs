@@ -124,7 +124,7 @@ namespace MISA.Fresher.Infracstructure.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Proc_GetEmployeeCode.
+        ///   Looks up a localized string similar to Proc_GetBiggestEmployeeCode.
         /// </summary>
         internal static string Proc_GetEmployeeCode {
             get {

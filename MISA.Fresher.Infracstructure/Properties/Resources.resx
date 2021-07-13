@@ -136,7 +136,7 @@
     <value>Proc_CheckEmployeeCodeExists</value>
   </data>
   <data name="Proc_GetEmployeeCode" xml:space="preserve">
-    <value>Proc_GetEmployeeCode</value>
+    <value>Proc_GetBiggestEmployeeCode</value>
   </data>
   <data name="Proc_GetEmployee_Pagination_Filter" xml:space="preserve">
     <value>Proc_GetEmployee_Pagination_Filter</value>
