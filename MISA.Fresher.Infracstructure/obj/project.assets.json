@@ -6330,24 +6330,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\ASUS\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\ngduong\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\gitFile\\backend\\MISA.Fresher.Infracstructure\\MISA.Fresher.Infracstructure.csproj",
+      "projectUniqueName": "E:\\ngduong\\backend\\MISA.Fresher.Infracstructure\\MISA.Fresher.Infracstructure.csproj",
       "projectName": "MISA.Fresher.Infracstructure",
-      "projectPath": "E:\\gitFile\\backend\\MISA.Fresher.Infracstructure\\MISA.Fresher.Infracstructure.csproj",
-      "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
-      "outputPath": "E:\\gitFile\\backend\\MISA.Fresher.Infracstructure\\obj\\",
+      "projectPath": "E:\\ngduong\\backend\\MISA.Fresher.Infracstructure\\MISA.Fresher.Infracstructure.csproj",
+      "packagesPath": "C:\\Users\\ngduong\\.nuget\\packages\\",
+      "outputPath": "E:\\ngduong\\backend\\MISA.Fresher.Infracstructure\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\ngduong\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -6361,8 +6356,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "E:\\gitFile\\backend\\MISA.Fresher.Core\\MISA.Fresher.Core.csproj": {
-              "projectPath": "E:\\gitFile\\backend\\MISA.Fresher.Core\\MISA.Fresher.Core.csproj"
+            "E:\\ngduong\\backend\\MISA.Fresher.Core\\MISA.Fresher.Core.csproj": {
+              "projectPath": "E:\\ngduong\\backend\\MISA.Fresher.Core\\MISA.Fresher.Core.csproj"
             }
           }
         }
@@ -6405,7 +6400,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.204\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
       }
     }
   }
