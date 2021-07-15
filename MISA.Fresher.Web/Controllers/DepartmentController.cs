@@ -10,6 +10,10 @@ using System.Threading.Tasks;
 
 namespace MISA.Fresher.Web.Controllers
 {
+    /// <summary>
+    /// Api thực hiện tác vụ của phòng ban
+    /// </summary>
+    /// CreatedBy: NGDuong (15/07/2021)
     [Route("api/v1/[controller]s")]
     [ApiController]
     public class DepartmentController :BaseEntityController<Department>

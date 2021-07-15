@@ -97,7 +97,8 @@ namespace MISA.Fresher.Web.Controllers
         {
             var stream = _employeeService.ExportExcel();
             string fileName = $"Danh sach nhan vien {DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss")}.xlsx";
-            return File(stream, "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet", fileName);
+            return File(stream, Properties.Resources.excel_source, fileName);
+            
         }
         #endregion
 

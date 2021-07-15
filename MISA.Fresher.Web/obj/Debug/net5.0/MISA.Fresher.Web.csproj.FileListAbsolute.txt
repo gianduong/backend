@@ -121,3 +121,5 @@ E:\gitFile\backend\MISA.Fresher.Web\obj\Debug\net5.0\MISA.Fresher.Web.dll
 E:\gitFile\backend\MISA.Fresher.Web\obj\Debug\net5.0\ref\MISA.Fresher.Web.dll
 E:\gitFile\backend\MISA.Fresher.Web\obj\Debug\net5.0\MISA.Fresher.Web.pdb
 E:\gitFile\backend\MISA.Fresher.Web\obj\Debug\net5.0\MISA.Fresher.Web.genruntimeconfig.cache
+E:\ngduong\backend\MISA.Fresher.Web\obj\Debug\net5.0\MISA.Fresher.Web.Properties.Resources.resources
+E:\ngduong\backend\MISA.Fresher.Web\obj\Debug\net5.0\MISA.Fresher.Web.csproj.GenerateResource.cache
