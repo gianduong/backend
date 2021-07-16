@@ -17,7 +17,7 @@ namespace MISA.Fresher.Core.Interfaces.Repository
         /// Lấy tất cả 
         /// </summary>
         /// <returns>Danh sách tất cả bản ghi</returns>
-        /// CreatedBy : PQHIEU(11/06/2021)
+        /// CreatedBy: NGDuong (17/07/2021)
         IEnumerable<T> GetAll();
 
         /// <summary>
@@ -25,14 +25,14 @@ namespace MISA.Fresher.Core.Interfaces.Repository
         /// </summary>
         /// <param name="entityId">ID của bản ghi</param>
         /// <returns>Bản ghi có ID</returns>
-        /// CreatedBy : PQHIEU(11/06/2021)
+        /// CreatedBy: NGDuong (17/07/2021)
         T GetById(Guid entityId);
         /// <summary>
         /// Thêm mới bản ghi
         /// </summary>
         /// <param name="entity">Bản ghi được thêm mới</param>
         /// <returns>Số lượng bản ghi được thêm mới</returns>
-        /// CreatedBy : PQHIEU(11/06/2021)
+        /// CreatedBy: NGDuong (17/07/2021)
         int Insert(T entity);
         /// <summary>
         /// Sửa bản ghi theo ID
@@ -40,14 +40,14 @@ namespace MISA.Fresher.Core.Interfaces.Repository
         /// <param name="entityId">ID của bản ghi cần sửa</param>
         /// <param name="entity">Thông tin bản ghi</param>
         /// <returns>Số lượng bản ghi được sửa</returns>
-        /// CreatedBy : PQHIEU(11/06/2021)
+        /// CreatedBy: NGDuong (17/07/2021)
         int Update(Guid entityId, T entity);
         /// <summary>
         /// Xóa bản ghi
         /// </summary>
         /// <param name="entityId">ID bản ghi cần xóa</param>
         /// <returns>Số lượng bản ghi bị xóa</returns>
-        /// CreatedBy : PQHIEU(11/06/2021)
+        /// CreatedBy: NGDuong (17/07/2021)
         int Delete(Guid entityId);
 
     }

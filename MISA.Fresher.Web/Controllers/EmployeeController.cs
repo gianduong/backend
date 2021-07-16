@@ -45,8 +45,8 @@ namespace MISA.Fresher.Web.Controllers
         /// </summary>
         /// <returns>
         /// Mã nhân viên mới có dạng NV-{...}
-        /// Createdby: NGDuong(13/07/2021)
         /// </returns>
+        /// Createdby: NGDuong(13/07/2021)
         [HttpGet("NewCode")]
         public IActionResult getBiggestEmployeeCode()
         {    

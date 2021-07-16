@@ -9,6 +9,10 @@ using System.Threading.Tasks;
 
 namespace MISA.Fresher.Core.Exceptions
 {
+    /// <summary>
+    /// hàm bắt ngoại lệ chung
+    /// </summary>
+    /// CreatedBy: NGDuong (16/07/2021)
     public class HttpResponseExceptionFilter : IActionFilter, IOrderedFilter
     {
         public int Order { get; } = int.MaxValue - 10;
@@ -19,6 +23,7 @@ namespace MISA.Fresher.Core.Exceptions
         {
             if (context.Exception != null)
             {
+                // nếu là hàm exception đã viết săn thì trả về thêm dữ liệu bị lỗi
                 if (context.Exception is ValidateException exception)
                 {
                     var response = new
@@ -34,6 +39,7 @@ namespace MISA.Fresher.Core.Exceptions
                     };
                     context.ExceptionHandled = true;
                 }
+                // nếu không thì trả về lỗi hệ thống mặc định
                 else
                 {
                     var response = new

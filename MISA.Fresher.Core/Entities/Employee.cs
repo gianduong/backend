@@ -53,7 +53,6 @@ namespace MISA.Fresher.Core.Entities
         /// Tên giới tính
         /// </summary>
         /// CreatedBy : NGDuong (11/06/2021)
-
         public string GenderName
         {
             get

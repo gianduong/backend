@@ -11,7 +11,7 @@ namespace MISA.Fresher.Core.Attributes
     /// </summary>
     /// CreatedBy: NGDuong (17/07/2021)
     [AttributeUsage(AttributeTargets.Property)]
-    public class Required:Attribute
+    public class Required : Attribute
     {
         #region filed
         /// <summary>
@@ -33,7 +33,20 @@ namespace MISA.Fresher.Core.Attributes
             _fieldError = fieldError;
         }
         #endregion
+    }
+    /// <summary>
+    /// Kiểm tra độ dài của thuộc tính
+    /// </summary>
+    [AttributeUsage(AttributeTargets.Property)]
+    public class MaxSize: Attribute
+    {
+        public int size;
+        public string msgError;
 
-
+        public MaxSize(int size, string msg)
+        {
+            this.size = size;
+            this.msgError = msg;
+        }
     }
 }

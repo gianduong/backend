@@ -12,7 +12,11 @@ namespace MISA.Fresher.Core.Exceptions
     /// CreatedBy: NGDuong (17/07/2021)
     public class ValidateException : Exception
     {
-
+        /// <summary>
+        /// Hàm validate ngoại lệ cho dữ liệu lỗi
+        /// </summary>
+        /// <param name="msg">Thông điệp ngoại lệ</param>
+        /// <param name="Data">Dữ liệu lỗi</param>
         public ValidateException(string msg, object Data) : base(msg)
         {
             var objecReturn = new

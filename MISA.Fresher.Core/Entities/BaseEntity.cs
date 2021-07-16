@@ -37,6 +37,10 @@ namespace MISA.Fresher.Core.Entities
         /// CreatedBy : NGDuong (11/06/2021)
         public string ModifiedBy { get; set; }
 
+        /// <summary>
+        /// Trạng thái cập nhật hay thêm 
+        /// </summary>
+        /// CreatedBy: NGDuong (26/07/2021)
         public EntityState EntityState { get; set; } = EntityState.Add;
     }
 }
