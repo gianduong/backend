@@ -67,6 +67,7 @@ namespace MISA.Fresher.Core.Service
                 range.Value = Properties.Resources.excel_ListNhanVien;
                 range.Merge = true;
             }
+            // todo: Đang làm 
             // Thêm tiêu đề
             workSheet.Cells[3, 1].Value = Properties.Resources.excel_STT;
             workSheet.Cells[3, 2].Value = Properties.Resources.excel_Code;
