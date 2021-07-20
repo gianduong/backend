@@ -19,12 +19,12 @@ namespace MISA.Fresher.Core.Exceptions
         /// <param name="Data">Dữ liệu lỗi</param>
         public ValidateException(string msg, object Data) : base(msg)
         {
-            var objecReturn = new
+            var objectReturn = new
             {
                 Msg = msg,
                 FieldNotValid = Data
             };
-            this.Data.Add("detail", objecReturn);
+            this.Data.Add("detail", objectReturn);
         }
     }
 }

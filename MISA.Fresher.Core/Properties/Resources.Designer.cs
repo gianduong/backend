@@ -151,7 +151,7 @@ namespace MISA.Fresher.Core.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Danh sách nhân viên.
+        ///   Looks up a localized string similar to DANH SÁCH NHÂN VIÊN.
         /// </summary>
         public static string excel_ListNhanVien {
             get {
