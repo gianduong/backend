@@ -105,7 +105,6 @@ E:\gitFile\backend\MISA.Fresher.Web\bin\Debug\net5.0\MISA.Fresher.Core.dll
 E:\gitFile\backend\MISA.Fresher.Web\bin\Debug\net5.0\MISA.Fresher.Infracstructure.dll
 E:\gitFile\backend\MISA.Fresher.Web\bin\Debug\net5.0\MISA.Fresher.Core.pdb
 E:\gitFile\backend\MISA.Fresher.Web\bin\Debug\net5.0\MISA.Fresher.Infracstructure.pdb
-E:\gitFile\backend\MISA.Fresher.Web\obj\Debug\net5.0\MISA.Fresher.Web.csprojAssemblyReference.cache
 E:\gitFile\backend\MISA.Fresher.Web\obj\Debug\net5.0\MISA.Fresher.Web.GeneratedMSBuildEditorConfig.editorconfig
 E:\gitFile\backend\MISA.Fresher.Web\obj\Debug\net5.0\MISA.Fresher.Web.AssemblyInfoInputs.cache
 E:\gitFile\backend\MISA.Fresher.Web\obj\Debug\net5.0\MISA.Fresher.Web.AssemblyInfo.cs
@@ -123,3 +122,6 @@ E:\gitFile\backend\MISA.Fresher.Web\obj\Debug\net5.0\MISA.Fresher.Web.pdb
 E:\gitFile\backend\MISA.Fresher.Web\obj\Debug\net5.0\MISA.Fresher.Web.genruntimeconfig.cache
 E:\ngduong\backend\MISA.Fresher.Web\obj\Debug\net5.0\MISA.Fresher.Web.Properties.Resources.resources
 E:\ngduong\backend\MISA.Fresher.Web\obj\Debug\net5.0\MISA.Fresher.Web.csproj.GenerateResource.cache
+E:\gitFile\backend\MISA.Fresher.Web\obj\Debug\net5.0\MISA.Fresher.Web.Properties.Resources.resources
+E:\gitFile\backend\MISA.Fresher.Web\obj\Debug\net5.0\MISA.Fresher.Web.csproj.GenerateResource.cache
+E:\gitFile\backend\MISA.Fresher.Web\obj\Debug\net5.0\MISA.Fresher.Web.csproj.AssemblyReference.cache

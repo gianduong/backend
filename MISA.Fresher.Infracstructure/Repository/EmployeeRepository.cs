@@ -38,7 +38,7 @@ namespace MISA.Fresher.Infracstructure.Repository
         /// true - mã đã tồn tại
         /// false - mã chưa tồn tại
         /// </returns>
-        /// CreatedBy : NGDuong (11/06/2021)
+        /// CreatedBy : NGDuong (20/07/2021)
         public bool CheckEmployeeCodeExits(string employeeCode, Guid? employeeId)
         {
             _dynamicParameters.Add(Properties.Resources.dy_code, employeeCode);

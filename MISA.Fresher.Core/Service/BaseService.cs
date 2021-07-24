@@ -15,7 +15,7 @@ namespace MISA.Fresher.Core.Service
     /// Interface cơ bản phục vụ các thao tác chung
     /// </summary>
     /// <typeparam name="T">Đối tượng</typeparam>
-    /// CreatedBy: NGDuong (17/07/2021)
+    /// CreatedBy: NGDuong (20/07/2021)
     public class BaseService<T> : IBaseService<T>
     {
         #region Field
@@ -45,7 +45,7 @@ namespace MISA.Fresher.Core.Service
         /// Kiểm tra thông tin hợp lệ
         /// </summary>
         /// <param name="entity">Đối tượng cần kiểm tra</param>
-        /// CreatedBy : NGDuong (24/5/2021)
+        /// CreatedBy : NGDuong (20/07/2021)
         protected virtual void Validate(T entity)
         {
             // Lấy ra các thuộc tính của đối tượng

@@ -61,6 +61,15 @@ namespace MISA.Fresher.Web.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Danh_sach_nhan_vien.xlsx.
+        /// </summary>
+        public static string excel_save {
+            get {
+                return ResourceManager.GetString("excel_save", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to application/vnd.openxmlformats-officedocument.spreadsheetml.sheet.
         /// </summary>
         public static string excel_source {

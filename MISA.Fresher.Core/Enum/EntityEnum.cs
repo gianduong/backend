@@ -10,7 +10,7 @@ namespace MISA.Fresher.Core.Enum
     /// <summary>
     /// Trạng thái của object
     /// </summary>
-    /// CreatedBy : NGDuong (11/06/2021)
+    /// CreatedBy : NGDuong (20/07/2021)
     public enum EntityState
     {
         /// <summary>
@@ -29,7 +29,7 @@ namespace MISA.Fresher.Core.Enum
     /// <summary>
     /// Giới tính
     /// </summary>
-    /// CreatedBy : NGDuong (11/06/2021)
+    /// CreatedBy : NGDuong (20/07/2021)
     public enum Gender
     {
         /// <summary>

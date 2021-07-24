@@ -9,19 +9,19 @@ namespace MISA.Fresher.Core.Entities
     /// <summary>
     /// Phòng ban
     /// </summary>
-    /// CreatedBy : NGDuong (11/06/2021)
+    /// CreatedBy : NGDuong (20/07/2021)
     public class Department:BaseEntity
     {
         /// <summary>
         /// ID phòng ban
         /// </summary>
-        /// CreatedBy : NGDuong (11/06/2021)
+        /// CreatedBy : NGDuong (20/07/2021)
         public Guid DeparmentId { get; set; }
 
         /// <summary>
         /// Tên phòng ban
         /// </summary>
-        /// CreatedBy : NGDuong (11/06/2021)
+        /// CreatedBy : NGDuong (20/07/2021)
         public string DeparmentName { get; set; }
     }
 }

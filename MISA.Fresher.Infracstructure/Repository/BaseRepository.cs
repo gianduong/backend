@@ -66,7 +66,7 @@ namespace MISA.Fresher.Infracstructure.Repository
         /// Thực hiện gán giá trị cho các tham số đầu vào của store với các property
         /// </summary>
         /// <param name="entity">Đối tượng sẽ thêm mới vào</param>
-        /// CreatedBy : NGDuong 11/06/2021
+        /// CreatedBy : NGDuong (20/07/2021)
         void MappingParameterValue(T entity)
         {
             // Lấy ra các property của đối tượng

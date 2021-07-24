@@ -11,7 +11,7 @@ namespace MISA.Fresher.Core.Interfaces.Service
     /// <summary>
     /// Inteface thực hiện thao tác lớp service của Nhân viên
     /// </summary>
-    /// CreatedBy: NGDuong (17/07/2021)
+    /// CreatedBy: NGDuong (20/07/2021)
     public interface IEmployeeService:IBaseService<Employee>
     {
         /// <summary>
@@ -20,13 +20,13 @@ namespace MISA.Fresher.Core.Interfaces.Service
         /// <returns>
         /// File excel chứa dữ liệu xuất khẩu
         /// </returns>
-        /// CreatedByL NGDuong (17/07/2021)
+        /// CreatedByL NGDuong (20/07/2021)
         Stream ExportExcel();
         /// <summary>
         /// Sinh mới mã nhân viên
         /// </summary>
         /// <returns>Mã nhân viên được thêm mới</returns>
-        /// CreatedBy: NGDuong (17/07/2021)
+        /// CreatedBy: NGDuong (20/07/2021)
         public String GenNewEmployeeCode();
     }
 }

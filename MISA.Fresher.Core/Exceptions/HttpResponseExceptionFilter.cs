@@ -12,7 +12,7 @@ namespace MISA.Fresher.Core.Exceptions
     /// <summary>
     /// hàm bắt ngoại lệ chung
     /// </summary>
-    /// CreatedBy: NGDuong (16/07/2021)
+    /// CreatedBy: NGDuong (20/07/2021)
     public class HttpResponseExceptionFilter : IActionFilter, IOrderedFilter
     {
         public int Order { get; } = int.MaxValue - 10;

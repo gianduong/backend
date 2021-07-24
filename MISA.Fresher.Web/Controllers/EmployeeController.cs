@@ -13,7 +13,7 @@ namespace MISA.Fresher.Web.Controllers
 {
     /// <summary>
     /// Api nhân viên
-    /// Createdby: NGDuong(13/07/2021)
+    /// Createdby: NGDuong(20/07/2021)
     /// </summary>
     [Route("api/v1/[controller]s")]
     [ApiController]
@@ -46,10 +46,10 @@ namespace MISA.Fresher.Web.Controllers
         /// <returns>
         /// Mã nhân viên mới có dạng NV-{...}
         /// </returns>
-        /// Createdby: NGDuong(13/07/2021)
+        /// Createdby: NGDuong(20/07/2021)
         [HttpGet("NewCode")]
         public IActionResult getBiggestEmployeeCode()
-        {    
+        {
             var newEmployeeCode = _employeeService.GenNewEmployeeCode();
             if (newEmployeeCode != null)
             {
@@ -66,7 +66,7 @@ namespace MISA.Fresher.Web.Controllers
         /// <param name="filterString">điều kiện filter</param>
         /// <returns>
         /// Danh sách nhân viên
-        /// Createdby: NGDuong(13/07/2021)
+        /// Createdby: NGDuong(20/07/2021)
         /// </returns>
         [HttpGet("Filter")]
         public IActionResult GetByPagination(int pageInt, int pageSize, string filterString = null)
@@ -90,15 +90,30 @@ namespace MISA.Fresher.Web.Controllers
         /// </summary>
         /// <returns>
         /// File Excel chưa dữ liệu xuất khẩu
-        /// Createdby: NGDuong(13/07/2021)
+        /// Createdby: NGDuong(20/07/2021)
         /// </returns>
         [HttpGet("Export")]
         public IActionResult Export()
         {
             var stream = _employeeService.ExportExcel();
-            string fileName = $"Danh sach nhan vien {DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss")}.xlsx";
+            string fileName = Properties.Resources.excel_save;
             return File(stream, Properties.Resources.excel_source, fileName);
-            
+
+        }
+        /// <summary>
+        /// Kiểm tra mã code có tồn tai không
+        /// </summary>
+        /// <param name="code">EmployeeCode</param>
+        /// <returns>
+        /// Ok(): có tồn tại
+        /// NoContent(): không tồn tại
+        /// </returns>
+        /// CreatedBy: NGDuong (21/07/2021)
+        [HttpGet("CodeExists")]
+        public IActionResult CheckCode(String code)
+        {
+            if (_employeeRepository.CheckEmployeeCodeExits(code)) return Ok(code);
+            return NoContent();
         }
         #endregion
 

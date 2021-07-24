@@ -10,7 +10,7 @@ namespace MISA.Fresher.Core.Interfaces.Repository
     /// <summary>
     /// Interface phòng ban
     /// </summary>
-    /// CreatedBy: NGDuong (17/07/2021)
+    /// CreatedBy: NGDuong (20/07/2021)
     public interface IDepartmentRepository:IBaseRepository<Department>
     {
 

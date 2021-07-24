@@ -9,7 +9,7 @@ namespace MISA.Fresher.Core.Attributes
     /// <summary>
     /// Attribute lỗi
     /// </summary>
-    /// CreatedBy: NGDuong (17/07/2021)
+    /// CreatedBy: NGDuong (20/07/2021)
     [AttributeUsage(AttributeTargets.Property)]
     public class Required : Attribute
     {
@@ -37,6 +37,7 @@ namespace MISA.Fresher.Core.Attributes
     /// <summary>
     /// Kiểm tra độ dài của thuộc tính
     /// </summary>
+    /// CreatedBy: NGDuong (20/07/2021)
     [AttributeUsage(AttributeTargets.Property)]
     public class MaxSize: Attribute
     {

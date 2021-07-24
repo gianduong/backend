@@ -9,6 +9,11 @@ using System.Threading.Tasks;
 
 namespace MISA.Fresher.Web.Controllers
 {
+    /// <summary>
+    /// API phục vụ các chức năng cơ bản
+    /// </summary>
+    /// <typeparam name="T">Đối tượng xử lý</typeparam>
+    /// CreatedBy: NGDuong (20/07/2021)
     [Route("api/v1/[controller]s")]
     [ApiController]
     public class BaseEntityController<T> : ControllerBase
@@ -33,7 +38,7 @@ namespace MISA.Fresher.Web.Controllers
         /// <returns>
         /// Danh sách tất cả bản ghi
         /// </returns>
-        /// CreatedBy: NGDuong(12/06/2021)
+        /// CreatedBy: NGDuong(20/07/2021)
         [HttpGet]
         public IActionResult GetAll()
         {
@@ -52,7 +57,7 @@ namespace MISA.Fresher.Web.Controllers
         /// 200 - trả về bản ghi
         /// 400 - Bad request
         /// </returns>
-        /// CreatedBy : NGDuong(12/06/2021)
+        /// CreatedBy : NGDuong(20/07/2021)
         [HttpGet("{entityId}")]
         public IActionResult GetById(Guid entityId)
         {
@@ -71,7 +76,7 @@ namespace MISA.Fresher.Web.Controllers
         /// 200 - thêm thành công
         /// 400 - Bad request
         /// </returns>
-        /// CreatedBy : NGDuong(12/06/2021)
+        /// CreatedBy : NGDuong(20/07/2021)
         [HttpPost]
         public IActionResult Insert(T entity)
         {
@@ -92,7 +97,7 @@ namespace MISA.Fresher.Web.Controllers
         /// 200 - cập nhật thành công
         /// 400 - bad request
         /// </returns>
-        /// CreatedBy : NGDuong(12/06/2021)
+        /// CreatedBy : NGDuong(20/07/2021)
         [HttpPut("{entityId}")]
         public virtual IActionResult Update(Guid entityId, T entity)
         {
@@ -112,7 +117,7 @@ namespace MISA.Fresher.Web.Controllers
         /// 200 - Xóa thành công
         /// 400 - Bad request
         /// </returns>
-        /// CreatedBy: NGDuong(12/06/2021)
+        /// CreatedBy: NGDuong(20/07/2021)
         [HttpDelete("{entityId}")]
         public IActionResult Delete(Guid entityId)
         {
