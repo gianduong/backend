@@ -15,7 +15,7 @@ namespace MISA.Fresher.Infracstructure.Repository
     {
         #region Field
         public IDbConnection _dbConnection;
-        string _connectString;
+        public string _connectString;
         IConfiguration _configuration;
         DynamicParameters _dynamicParameters;
         string _className;
@@ -26,7 +26,7 @@ namespace MISA.Fresher.Infracstructure.Repository
         {
             _configuration = configuration;
             _connectString = _configuration.GetConnectionString("DefaultConnection");
-            _dbConnection = new MySqlConnection(_connectString);
+            //_dbConnection = new MySqlConnection(_connectString);
             _dynamicParameters = new DynamicParameters();
             _className = typeof(T).Name;
         }
@@ -35,31 +35,50 @@ namespace MISA.Fresher.Infracstructure.Repository
         #region Methods
         public IEnumerable<T> GetAll()
         {
-            return _dbConnection.Query<T>($"Proc_Get{_className}s", commandType: CommandType.StoredProcedure);
+            using (_dbConnection = new MySqlConnection(_connectString))
+            {
+                return _dbConnection.Query<T>($"Proc_Get{_className}s", commandType: CommandType.StoredProcedure);
+            }
         }
 
         public T GetById(Guid entityId)
         {
-            _dynamicParameters.Add($"@m_{_className}Id", entityId);
-            return _dbConnection.QueryFirstOrDefault<T>($"Proc_Get{_className}ById", _dynamicParameters, commandType: CommandType.StoredProcedure);
+            using (_dbConnection = new MySqlConnection(_connectString))
+            {
+                _dynamicParameters.Add($"@m_{_className}Id", entityId);
+                return _dbConnection.QueryFirstOrDefault<T>($"Proc_Get{_className}ById", _dynamicParameters, commandType: CommandType.StoredProcedure);
+            }
+
         }
 
         public int Insert(T entity)
         {
-            MappingParameterValue(entity);
-            return _dbConnection.Execute($"Proc_Insert{_className}", _dynamicParameters, commandType: CommandType.StoredProcedure);
+            using (_dbConnection = new MySqlConnection(_connectString))
+            {
+                MappingParameterValue(entity);
+                return _dbConnection.Execute($"Proc_Insert{_className}", _dynamicParameters, commandType: CommandType.StoredProcedure);
+            }
+
         }
 
         public int Update(Guid entityId, T entity)
         {
-            entity.GetType().GetProperty($"{_className}Id").SetValue(entity, entityId);
-            MappingParameterValue(entity);
-            return _dbConnection.Execute($"Proc_Update{_className}", _dynamicParameters, commandType: CommandType.StoredProcedure);
+            using (_dbConnection = new MySqlConnection(_connectString))
+            {
+                entity.GetType().GetProperty($"{_className}Id").SetValue(entity, entityId);
+                MappingParameterValue(entity);
+                return _dbConnection.Execute($"Proc_Update{_className}", _dynamicParameters, commandType: CommandType.StoredProcedure);
+            }
+
         }
         public int Delete(Guid entityId)
         {
-            _dynamicParameters.Add($"@m_{_className}Id", entityId);
-            return _dbConnection.Execute($"Proc_Delete{_className}", _dynamicParameters, commandType: CommandType.StoredProcedure);
+            using (_dbConnection = new MySqlConnection(_connectString))
+            {
+                _dynamicParameters.Add($"@m_{_className}Id", entityId);
+                return _dbConnection.Execute($"Proc_Delete{_className}", _dynamicParameters, commandType: CommandType.StoredProcedure);
+            }
+
         }
 
         /// <summary>

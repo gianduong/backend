@@ -18,9 +18,10 @@ namespace MISA.Fresher.Web.Controllers
     [ApiController]
     public class DepartmentController :BaseEntityController<Department>
     {
+        #region Constructure
         public DepartmentController(IDepartmentService departmentService, IDepartmentRepository departmentRepository) : base(departmentService, departmentRepository)
         {
-
         }
+        #endregion
     }
 }

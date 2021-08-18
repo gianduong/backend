@@ -12,6 +12,7 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
+using MySqlConnector;
 
 namespace MISA.Fresher.Infracstructure.Repository
 {
@@ -19,6 +20,7 @@ namespace MISA.Fresher.Infracstructure.Repository
     {
         #region Field
         DynamicParameters _dynamicParameters;
+
 
         #endregion
         #region Constructor
@@ -41,34 +43,47 @@ namespace MISA.Fresher.Infracstructure.Repository
         /// CreatedBy : NGDuong (20/07/2021)
         public bool CheckEmployeeCodeExits(string employeeCode, Guid? employeeId)
         {
-            _dynamicParameters.Add(Properties.Resources.dy_code, employeeCode);
-            _dynamicParameters.Add(Properties.Resources.dy_id, employeeId);
-            var isExit = _dbConnection.ExecuteScalar<bool>(Properties.Resources.proc_CheckCodeExist, _dynamicParameters, commandType: CommandType.StoredProcedure);
-            return isExit;
+            using(_dbConnection = new MySqlConnection(_connectString))
+            {
+                _dynamicParameters.Add(Properties.Resources.dy_code, employeeCode);
+                _dynamicParameters.Add(Properties.Resources.dy_id, employeeId);
+                var isExit = _dbConnection.ExecuteScalar<bool>(Properties.Resources.proc_CheckCodeExist, _dynamicParameters, commandType: CommandType.StoredProcedure);
+                return isExit;
+            }
+            
         }
 
         public IEnumerable<Employee> GetByPaginationFilter(int pageInt, int pageSize, string filterString)
         {
-            var storeName = Properties.Resources.Proc_GetEmployee_Pagination_Filter;
-            _dynamicParameters.Add(Properties.Resources.dy_size, pageSize);
-            _dynamicParameters.Add(Properties.Resources.dy_int, pageInt);
-            _dynamicParameters.Add(Properties.Resources.dy_fitler, filterString);
-            return _dbConnection.Query<Employee>(storeName, _dynamicParameters, commandType: CommandType.StoredProcedure);
+            using (_dbConnection = new MySqlConnection(_connectString))
+            {
+                var storeName = Properties.Resources.Proc_GetEmployee_Pagination_Filter;
+                _dynamicParameters.Add(Properties.Resources.dy_size, pageSize);
+                _dynamicParameters.Add(Properties.Resources.dy_int, pageInt);
+                _dynamicParameters.Add(Properties.Resources.dy_fitler, filterString);
+                return _dbConnection.Query<Employee>(storeName, _dynamicParameters, commandType: CommandType.StoredProcedure);
+            }
         }
 
         public int GetTotalByFilter(string filterString)
         {
-            var storeName = Properties.Resources.Proc_GetTotal;
-            _dynamicParameters.Add(Properties.Resources.dy_fitler, filterString);
-            return _dbConnection.ExecuteScalar<int>(storeName, _dynamicParameters, commandType: CommandType.StoredProcedure);
+            using (_dbConnection = new MySqlConnection(_connectString))
+            {
+                var storeName = Properties.Resources.Proc_GetTotal;
+                _dynamicParameters.Add(Properties.Resources.dy_fitler, filterString);
+                return _dbConnection.ExecuteScalar<int>(storeName, _dynamicParameters, commandType: CommandType.StoredProcedure);
+            }
         }
 
         public string GenEmployeeCode()
         {
-            // 3. Thực thi lệnh lấy dữ liệu trong Database:
-            var sqlCommand = Properties.Resources.Proc_GetEmployeeCode;
-            var res = _dbConnection.QueryFirstOrDefault<String>(sqlCommand, commandType: CommandType.StoredProcedure);
-            return res;       
+            using (_dbConnection = new MySqlConnection(_connectString))
+            {
+                // 3. Thực thi lệnh lấy dữ liệu trong Database:
+                var sqlCommand = Properties.Resources.Proc_GetEmployeeCode;
+                var res = _dbConnection.QueryFirstOrDefault<String>(sqlCommand, commandType: CommandType.StoredProcedure);
+                return res;
+            }
         }
         #endregion
     }

@@ -12,7 +12,7 @@ using System.Threading.Tasks;
 namespace MISA.Fresher.Web.Controllers
 {
     /// <summary>
-    /// Api nhân viên
+    /// Api thực hiện các tác vụ của nhân viên
     /// Createdby: NGDuong(20/07/2021)
     /// </summary>
     [Route("api/v1/[controller]s")]
@@ -51,11 +51,7 @@ namespace MISA.Fresher.Web.Controllers
         public IActionResult getBiggestEmployeeCode()
         {
             var newEmployeeCode = _employeeService.GenNewEmployeeCode();
-            if (newEmployeeCode != null)
-            {
-                return Ok(newEmployeeCode);
-            }
-            return NoContent();
+            return Ok(newEmployeeCode);
         }
 
         /// <summary>

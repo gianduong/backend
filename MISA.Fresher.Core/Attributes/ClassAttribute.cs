@@ -41,8 +41,16 @@ namespace MISA.Fresher.Core.Attributes
     [AttributeUsage(AttributeTargets.Property)]
     public class MaxSize: Attribute
     {
+        #region Field
+        /// <summary>
+        /// kích thước tối đa
+        /// </summary>
         public int size;
+        /// <summary>
+        /// Thông điệp lỗi
+        /// </summary>
         public string msgError;
+        #endregion
 
         public MaxSize(int size, string msg)
         {
