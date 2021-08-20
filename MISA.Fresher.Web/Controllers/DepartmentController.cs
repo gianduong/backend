@@ -13,7 +13,7 @@ namespace MISA.Fresher.Web.Controllers
     /// <summary>
     /// Api thực hiện tác vụ của phòng ban
     /// </summary>
-    /// CreatedBy: NGDuong (20/07/2021)
+    /// CreatedBy: NGDuong (18/08/2021)
     [Route("api/v1/[controller]s")]
     [ApiController]
     public class DepartmentController :BaseEntityController<Department>

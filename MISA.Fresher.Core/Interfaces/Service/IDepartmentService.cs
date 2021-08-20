@@ -9,7 +9,7 @@ namespace MISA.Fresher.Core.Interfaces.Service
 {
     /// <summary>
     /// Iterface của nhóm nhân viên
-    /// CreatedBy: NGDuong (20/07/2021)
+    /// CreatedBy: NGDuong (18/08/2021)
     /// </summary>
     public interface IDepartmentService:IBaseService<Department>
     {

@@ -11,7 +11,7 @@ namespace MISA.Fresher.Core.Interfaces.Repository
     /// <summary>
     /// Interface thực hiện thao tác với nhân viên
     /// </summary>
-    /// CreatedBy: NGDuong (20/07/2021)
+    /// CreatedBy: NGDuong (18/08/2021)
     public interface IEmployeeRepository:IBaseRepository<Employee>
     {
         /// <summary>
@@ -23,7 +23,7 @@ namespace MISA.Fresher.Core.Interfaces.Repository
         /// true - mã nhân viên đã tồn tại
         /// false - mã nhân viên chưa tồn tại
         /// </returns>
-        /// CreatedBy: NGDuong(20/07/2021)
+        /// CreatedBy: NGDuong(18/08/2021)
         bool CheckEmployeeCodeExits(string employeeCode, Guid? employeeId = null);
 
 
@@ -36,7 +36,7 @@ namespace MISA.Fresher.Core.Interfaces.Repository
         /// <returns>
         /// Danh sách nhân viên 
         /// </returns>
-        /// NGDuong (20/07/2021)
+        /// NGDuong (18/08/2021)
         IEnumerable<Employee> GetByPaginationFilter(int pageInt, int pageSize, string filterString);
 
         /// <summary>
@@ -46,7 +46,7 @@ namespace MISA.Fresher.Core.Interfaces.Repository
         /// <returns>
         /// Số lượng bản ghi hợp lệ
         /// </returns>
-        /// NGDuong (20/07/2021)
+        /// NGDuong (18/08/2021)
         int GetTotalByFilter(string filterString);
         /// <summary>
         /// Sinh ra mã nhân viên mới
@@ -54,7 +54,7 @@ namespace MISA.Fresher.Core.Interfaces.Repository
         /// <returns>
         /// Mã nhân viên mới
         /// </returns>
-        /// NGDuong (20/07/2021)
+        /// NGDuong (18/08/2021)
         public string GenEmployeeCode();
 
     }

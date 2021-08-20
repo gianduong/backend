@@ -132,8 +132,17 @@
   <data name="dy_size" xml:space="preserve">
     <value>@m_PageSize</value>
   </data>
+  <data name="m_ClassNameId" xml:space="preserve">
+    <value>m_{0}Id</value>
+  </data>
+  <data name="m_PropertyName" xml:space="preserve">
+    <value>m_{0}</value>
+  </data>
   <data name="proc_CheckCodeExist" xml:space="preserve">
     <value>Proc_CheckEmployeeCodeExists</value>
+  </data>
+  <data name="Proc_Delete_className" xml:space="preserve">
+    <value>Proc_Delete{0}</value>
   </data>
   <data name="Proc_GetEmployeeCode" xml:space="preserve">
     <value>Proc_GetBiggestEmployeeCode</value>
@@ -141,7 +150,22 @@
   <data name="Proc_GetEmployee_Pagination_Filter" xml:space="preserve">
     <value>Proc_GetEmployee_Pagination_Filter</value>
   </data>
+  <data name="Proc_Gets" xml:space="preserve">
+    <value>Proc_Get{0}s</value>
+  </data>
   <data name="Proc_GetTotal" xml:space="preserve">
     <value>Proc_GetTotal</value>
+  </data>
+  <data name="Proc_Get_classNameById" xml:space="preserve">
+    <value>Proc_Get{0}ById</value>
+  </data>
+  <data name="Proc_Insert_className" xml:space="preserve">
+    <value>Proc_Insert{0}</value>
+  </data>
+  <data name="Proc_Update_className" xml:space="preserve">
+    <value>Proc_Update{0}</value>
+  </data>
+  <data name="_ClassNameId" xml:space="preserve">
+    <value>_{0}Id</value>
   </data>
 </root>

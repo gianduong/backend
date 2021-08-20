@@ -37,7 +37,8 @@ namespace MISA.Fresher.Infracstructure.Repository
         {
             using (_dbConnection = new MySqlConnection(_connectString))
             {
-                return _dbConnection.Query<T>($"Proc_Get{_className}s", commandType: CommandType.StoredProcedure);
+                var sqlCommand = String.Format(Properties.Resources.Proc_Gets, _className);
+                return _dbConnection.Query<T>(sqlCommand, commandType: CommandType.StoredProcedure);
             }
         }
 
@@ -46,7 +47,8 @@ namespace MISA.Fresher.Infracstructure.Repository
             using (_dbConnection = new MySqlConnection(_connectString))
             {
                 _dynamicParameters.Add($"@m_{_className}Id", entityId);
-                return _dbConnection.QueryFirstOrDefault<T>($"Proc_Get{_className}ById", _dynamicParameters, commandType: CommandType.StoredProcedure);
+                var sqlCommand = String.Format(Properties.Resources.Proc_Get_classNameById, _className);
+                return _dbConnection.QueryFirstOrDefault<T>(sqlCommand, _dynamicParameters, commandType: CommandType.StoredProcedure);
             }
 
         }
@@ -56,7 +58,8 @@ namespace MISA.Fresher.Infracstructure.Repository
             using (_dbConnection = new MySqlConnection(_connectString))
             {
                 MappingParameterValue(entity);
-                return _dbConnection.Execute($"Proc_Insert{_className}", _dynamicParameters, commandType: CommandType.StoredProcedure);
+                var sqlCommand = String.Format(Properties.Resources.Proc_Insert_className, _className);
+                return _dbConnection.Execute(sqlCommand, _dynamicParameters, commandType: CommandType.StoredProcedure);
             }
 
         }
@@ -67,7 +70,8 @@ namespace MISA.Fresher.Infracstructure.Repository
             {
                 entity.GetType().GetProperty($"{_className}Id").SetValue(entity, entityId);
                 MappingParameterValue(entity);
-                return _dbConnection.Execute($"Proc_Update{_className}", _dynamicParameters, commandType: CommandType.StoredProcedure);
+                var sqlCommand = String.Format(Properties.Resources.Proc_Update_className, _className);
+                return _dbConnection.Execute(sqlCommand, _dynamicParameters, commandType: CommandType.StoredProcedure);
             }
 
         }
@@ -76,7 +80,8 @@ namespace MISA.Fresher.Infracstructure.Repository
             using (_dbConnection = new MySqlConnection(_connectString))
             {
                 _dynamicParameters.Add($"@m_{_className}Id", entityId);
-                return _dbConnection.Execute($"Proc_Delete{_className}", _dynamicParameters, commandType: CommandType.StoredProcedure);
+                var sqlCommand = String.Format(Properties.Resources.Proc_Delete_className, _className);
+                return _dbConnection.Execute(sqlCommand, _dynamicParameters, commandType: CommandType.StoredProcedure);
             }
 
         }
@@ -85,7 +90,7 @@ namespace MISA.Fresher.Infracstructure.Repository
         /// Thực hiện gán giá trị cho các tham số đầu vào của store với các property
         /// </summary>
         /// <param name="entity">Đối tượng sẽ thêm mới vào</param>
-        /// CreatedBy : NGDuong (20/07/2021)
+        /// CreatedBy : NGDuong (18/08/2021)
         void MappingParameterValue(T entity)
         {
             // Lấy ra các property của đối tượng

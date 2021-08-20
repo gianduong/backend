@@ -61,6 +61,15 @@ namespace MISA.Fresher.Infracstructure.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to _{0}Id.
+        /// </summary>
+        internal static string _ClassNameId {
+            get {
+                return ResourceManager.GetString("_ClassNameId", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to @m_employeeCode.
         /// </summary>
         internal static string dy_code {
@@ -106,11 +115,47 @@ namespace MISA.Fresher.Infracstructure.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to m_{0}Id.
+        /// </summary>
+        internal static string m_ClassNameId {
+            get {
+                return ResourceManager.GetString("m_ClassNameId", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to m_{0}.
+        /// </summary>
+        internal static string m_PropertyName {
+            get {
+                return ResourceManager.GetString("m_PropertyName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Proc_CheckEmployeeCodeExists.
         /// </summary>
         internal static string proc_CheckCodeExist {
             get {
                 return ResourceManager.GetString("proc_CheckCodeExist", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Proc_Delete{0}.
+        /// </summary>
+        internal static string Proc_Delete_className {
+            get {
+                return ResourceManager.GetString("Proc_Delete_className", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Proc_Get{0}ById.
+        /// </summary>
+        internal static string Proc_Get_classNameById {
+            get {
+                return ResourceManager.GetString("Proc_Get_classNameById", resourceCulture);
             }
         }
         
@@ -133,11 +178,38 @@ namespace MISA.Fresher.Infracstructure.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Proc_Get{0}s.
+        /// </summary>
+        internal static string Proc_Gets {
+            get {
+                return ResourceManager.GetString("Proc_Gets", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Proc_GetTotal.
         /// </summary>
         internal static string Proc_GetTotal {
             get {
                 return ResourceManager.GetString("Proc_GetTotal", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Proc_Insert{0}.
+        /// </summary>
+        internal static string Proc_Insert_className {
+            get {
+                return ResourceManager.GetString("Proc_Insert_className", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Proc_Update{0}.
+        /// </summary>
+        internal static string Proc_Update_className {
+            get {
+                return ResourceManager.GetString("Proc_Update_className", resourceCulture);
             }
         }
     }

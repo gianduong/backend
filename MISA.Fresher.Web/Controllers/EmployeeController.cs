@@ -13,7 +13,7 @@ namespace MISA.Fresher.Web.Controllers
 {
     /// <summary>
     /// Api thực hiện các tác vụ của nhân viên
-    /// Createdby: NGDuong(20/07/2021)
+    /// Createdby: NGDuong(18/08/2021)
     /// </summary>
     [Route("api/v1/[controller]s")]
     [ApiController]
@@ -46,7 +46,7 @@ namespace MISA.Fresher.Web.Controllers
         /// <returns>
         /// Mã nhân viên mới có dạng NV-{...}
         /// </returns>
-        /// Createdby: NGDuong(20/07/2021)
+        /// Createdby: NGDuong(18/08/2021)
         [HttpGet("NewCode")]
         public IActionResult getBiggestEmployeeCode()
         {
@@ -62,7 +62,7 @@ namespace MISA.Fresher.Web.Controllers
         /// <param name="filterString">điều kiện filter</param>
         /// <returns>
         /// Danh sách nhân viên
-        /// Createdby: NGDuong(20/07/2021)
+        /// Createdby: NGDuong(18/08/2021)
         /// </returns>
         [HttpGet("Filter")]
         public IActionResult GetByPagination(int pageInt, int pageSize, string filterString = null)
@@ -86,7 +86,7 @@ namespace MISA.Fresher.Web.Controllers
         /// </summary>
         /// <returns>
         /// File Excel chưa dữ liệu xuất khẩu
-        /// Createdby: NGDuong(20/07/2021)
+        /// Createdby: NGDuong(18/08/2021)
         /// </returns>
         [HttpGet("Export")]
         public IActionResult Export()
@@ -104,7 +104,7 @@ namespace MISA.Fresher.Web.Controllers
         /// Ok(): có tồn tại
         /// NoContent(): không tồn tại
         /// </returns>
-        /// CreatedBy: NGDuong (21/07/2021)
+        /// CreatedBy: NGDuong (18/08/2021)
         [HttpGet("CodeExists")]
         public IActionResult CheckCode(String code)
         {

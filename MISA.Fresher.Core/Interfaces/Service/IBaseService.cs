@@ -10,7 +10,7 @@ namespace MISA.Fresher.Core.Interfaces.Service
     /// Interface thực hiện các thao tác lớp service
     /// </summary>
     /// <typeparam name="T">Đối tượng</typeparam>
-    /// CreatedBy: NGDuong (20/07/2021)
+    /// CreatedBy: NGDuong (18/08/2021)
     public interface IBaseService<T>
     {
         /// <summary>
@@ -18,7 +18,7 @@ namespace MISA.Fresher.Core.Interfaces.Service
         /// </summary>
         /// <param name="entity">Thông tin đối tượng thêm mới</param>
         /// <returns>1 bản ghi được thêm vào database</returns>
-        /// Created: NGDuong (20/07/2021)
+        /// Created: NGDuong (18/08/2021)
         int Insert(T entity);
         /// <summary>
         /// Sửa
@@ -26,7 +26,7 @@ namespace MISA.Fresher.Core.Interfaces.Service
         /// <param name="entityId">ID đối tượng sửa</param>
         /// <param name="entity">Thông tin đối tượng thêm mới</param>
         /// <returns>1 bản ghi được chỉnh sửa trong database</returns>
-        /// Created: NGDuong (20/07/2021)
+        /// Created: NGDuong (18/08/2021)
         int Update(Guid entityId, T entity);
         
     }
