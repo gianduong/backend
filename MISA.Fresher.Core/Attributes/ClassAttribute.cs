@@ -32,6 +32,10 @@ namespace MISA.Fresher.Core.Attributes
             _msgError = msgError;
             _fieldError = fieldError;
         }
+        public Required(string msg)
+        {
+            _msgError = msg;
+        }
         #endregion
     }
     /// <summary>
@@ -45,16 +49,16 @@ namespace MISA.Fresher.Core.Attributes
         /// <summary>
         /// kích thước tối đa
         /// </summary>
-        public int size;
+        public int MaxLength = 0;
         /// <summary>
         /// Thông điệp lỗi
         /// </summary>
-        public string msgError;
+        public string msgError = String.Empty;
         #endregion
 
-        public MaxSize(int size, string msg)
+        public MaxSize(int MaxLength=0, string msg="")
         {
-            this.size = size;
+            this.MaxLength = MaxLength;
             this.msgError = msg;
         }
     }

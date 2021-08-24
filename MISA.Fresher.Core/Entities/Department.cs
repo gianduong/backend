@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MISA.Fresher.Core.Attributes;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -22,6 +23,7 @@ namespace MISA.Fresher.Core.Entities
         /// Tên phòng ban
         /// </summary>
         /// CreatedBy : NGDuong (18/08/2021)
+        [MaxSize(MaxLength: 100)]
         public string DeparmentName { get; set; }
     }
 }

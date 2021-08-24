@@ -41,6 +41,7 @@ namespace MISA.Fresher.Core.Service
             Validate(entity);
             return _repository.Update(entityId, entity);
         }
+        #region Validate
         /// <summary>
         /// Kiểm tra thông tin hợp lệ
         /// </summary>
@@ -55,6 +56,7 @@ namespace MISA.Fresher.Core.Service
             {
                 // Nếu có
                 var attributesRequired = property.GetCustomAttributes(typeof(Required), true);
+                var attributeMaxLength = property.GetCustomAttributes(typeof(MaxSize), true);
                 if (attributesRequired.Length > 0)
                 {
                     var propertyValue = property.GetValue(entity);
@@ -63,12 +65,33 @@ namespace MISA.Fresher.Core.Service
                     if (propertyType == typeof(string) && string.IsNullOrEmpty(propertyValue.ToString()))
                     {
                         var errorMessage = (attributesRequired[0] as Required)._msgError;
-                        var fieldError = (attributesRequired[0] as Required)._fieldError;
-                        throw new ValidateException(errorMessage, entity.GetType().GetProperty(fieldError).Name);
+                        throw new ValidateException(errorMessage, property.Name);
+                    }
+                }
+                if (attributeMaxLength.Length > 0)
+                {
+                    //lay gia tri cua propery
+                    var propetyValue = property.GetValue(entity);
+                    //lay ra do dai cho phep
+                    var maxLength = (attributeMaxLength[0] as MaxSize).MaxLength;
+                    if (propetyValue != null && propetyValue.ToString().Length > maxLength)
+                    {
+                        var errorMessage = String.Format(Properties.Resources.message_MaxLength, property.Name, maxLength);
+                        throw new ValidateException(errorMessage, property.Name);
                     }
                 }
             }
         }
+        /// <summary>
+        /// Hàm validate của Riêng từng đối tượng
+        /// </summary>
+        /// <param name="entity">Tên của đối tượng</param>
+        /// CreatedBy: NGDuong (24/08/2021)
+        protected virtual void ValidateCustom(T entity)
+        {
+
+        }
+        #endregion
         #endregion
 
     }

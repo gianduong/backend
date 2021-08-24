@@ -214,6 +214,15 @@ namespace MISA.Fresher.Core.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Thông tin {0} không được dài quá {1} ký tự!.
+        /// </summary>
+        public static string message_MaxLength {
+            get {
+                return ResourceManager.GetString("message_MaxLength", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Khác.
         /// </summary>
         public static string OTHER {

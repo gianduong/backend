@@ -1,4 +1,5 @@
-﻿using MISA.Fresher.Core.Enum;
+﻿using MISA.Fresher.Core.Attributes;
+using MISA.Fresher.Core.Enum;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -23,6 +24,7 @@ namespace MISA.Fresher.Core.Entities
         /// Người tạo
         /// </summary>
         /// CreatedBy : NGDuong (18/08/2021)
+        [MaxSize(MaxLength: 100)]
         public string CreatedBy { get; set; }
 
         /// <summary>
@@ -35,6 +37,7 @@ namespace MISA.Fresher.Core.Entities
         /// Người sửa
         /// </summary>
         /// CreatedBy : NGDuong (18/08/2021)
+        [MaxSize(MaxLength: 100)]
         public string ModifiedBy { get; set; }
 
         /// <summary>

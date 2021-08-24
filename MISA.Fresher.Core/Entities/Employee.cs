@@ -1,4 +1,5 @@
-﻿using MISA.Fresher.Core.Enum;
+﻿using MISA.Fresher.Core.Attributes;
+using MISA.Fresher.Core.Enum;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -23,12 +24,14 @@ namespace MISA.Fresher.Core.Entities
         /// Mã nhân viên
         /// </summary>
         /// CreatedBy : NGDuong (18/08/2021)
+        [MaxSize(MaxLength: 10)]
         public string EmployeeCode { get; set; }
 
         /// <summary>
         /// Tên nhân viên
         /// </summary>
         /// CreatedBy : NGDuong (18/08/2021)
+        [MaxSize(MaxLength: 100)]
         public string FullName { get; set; }
 
         /// <summary>
@@ -41,6 +44,7 @@ namespace MISA.Fresher.Core.Entities
         /// Tên phòng ban
         /// </summary>
         /// CreatedBy : NGDuong(18/08/2021)
+        [MaxSize(MaxLength: 100)]
         public string DeparmentName { get; set; }
 
         /// <summary>
@@ -76,6 +80,7 @@ namespace MISA.Fresher.Core.Entities
         /// Số chứng minh nhân dân
         /// </summary>
         /// CreatedBy : NGDuong (18/08/2021)
+        [MaxSize(MaxLength: 13)]
         public string IdentityNumber { get; set; }
 
         /// <summary>
@@ -88,54 +93,63 @@ namespace MISA.Fresher.Core.Entities
         /// Nơi cấp chứng minh nhân dân
         /// </summary>
         /// CreatedBy : NGDuong (18/08/2021)
+        [MaxSize(MaxLength: 255)]
         public string IdentityPlace { get; set; }
 
         /// <summary>
         /// Chức vụ nhân viên
         /// </summary>
         /// CreatedBy : NGDuong (18/08/2021)
+        [MaxSize(MaxLength: 255)]
         public string PositionName { get; set; }
 
         /// <summary>
         /// Địa chỉ
         /// </summary>
         /// CreatedBy : NGDuong (18/08/2021)
+        [MaxSize(MaxLength: 255)]
         public string Address { get; set; }
 
         /// <summary>
         /// Số điện thoại
         /// </summary>
         /// CreatedBy : NGDuong (18/08/2021)
+        [MaxSize(MaxLength: 50)]
         public string PhoneNumber { get; set; }
 
         /// <summary>
         /// Số cố định
         /// </summary>
         /// CreatedBy : NGDuong (18/08/2021)
+        [MaxSize(MaxLength: 50)]
         public string LandlinePhone { get; set; }
 
         /// <summary>
         /// Email
         /// </summary>
         /// CreatedBy : NGDuong (18/08/2021)
+        [MaxSize(MaxLength: 100)]
         public string Email { get; set; }
 
         /// <summary>
         /// Số tài khoản ngân hàng
         /// </summary>
         /// CreatedBy : NGDuong (18/08/2021)
+        [MaxSize(MaxLength: 20)]
         public string BankAccount { get; set; }
 
         /// <summary>
         /// Tên ngân hàng
         /// </summary>
         /// CreatedBy : NGDuong (18/08/2021)
+        [MaxSize(MaxLength: 255)]
         public string BankName { get; set; }
 
         /// <summary>
         /// Chi nhánh ngân hàng
         /// </summary>
         /// CreatedBy : NGDuong (18/08/2021)
+        [MaxSize(MaxLength: 255)]
         public string BankBranch { get; set; }
 
     }
